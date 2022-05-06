@@ -9,8 +9,14 @@
     {
       "id": 2,
       "text": "Learn React",
-      "day": "June 30th",
-      "reminder": false
+      "day": "May 20th",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Learn JS",
+      "day": "May 20th",
+      "reminder": true
     }
   ]
 }
