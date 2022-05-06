@@ -9,11 +9,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TaskService {
+  private apiUrl = 'http://localhost:5000/tasks'
 
-  constructor() { }
+  constructor(private http: HttpClient) {}
 
   getTasks(): Observable<Array<ITasks>>{
-    const tasks = of(TASKS);
-    return tasks;
+    return this.http.get<Array<ITasks>>(this.apiUrl);
   }
 }
