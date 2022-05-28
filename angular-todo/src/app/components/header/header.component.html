@@ -1,4 +1,4 @@
 <header>
      <h2 nz-typography>{{ title }}</h2>
-    <app-button color="aqua" text="Add" (btnClick)="toggleAddTask()"></app-button>
+    <app-button color="{{showAddTask ? 'red' : 'green' }}" text="{{showAddTask ? 'Close' : 'Show add form' }}" (btnClick)="toggleAddTask()"></app-button>
 </header>
