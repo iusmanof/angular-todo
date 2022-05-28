@@ -1,28 +1,16 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Learn Angular",
-      "day": "May 20th",
-      "reminder": false
+      "text": "Task 2",
+      "day": "2022-05-04",
+      "reminder": true,
+      "id": 5
     },
     {
-      "id": 2,
-      "text": "Learn React",
-      "day": "May 20th",
-      "reminder": true
-    },
-    {
-      "id": 3,
-      "text": "Learn JS",
-      "day": "May 20th",
-      "reminder": false
-    },
-    {
-      "id": 4,
-      "text": "Learn NodeJS",
-      "day": "May 20th",
-      "reminder": false
+      "text": "Task 1",
+      "day": "2022-05-12",
+      "reminder": false,
+      "id": 6
     }
   ]
 }

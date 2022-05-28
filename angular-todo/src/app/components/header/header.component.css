@@ -2,6 +2,5 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10em;
     font-weight: 100;
 }
