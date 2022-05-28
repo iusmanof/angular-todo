@@ -17,9 +17,17 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { AddTaskComponent } from './components/add-task/add-task.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 registerLocaleData(en);
+
+const appRoutes: Routes = [
+  {path: '', component: TasksComponent},
+  {path: 'about', component: AboutComponent}
+]
 
 @NgModule({
   declarations: [
@@ -29,6 +37,8 @@ registerLocaleData(en);
     TasksComponent,
     TaskItemComponent,
     AddTaskComponent,
+    AboutComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,7 +47,8 @@ registerLocaleData(en);
     FormsModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes, { enableTracing: true})
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
