@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Learn Angular",
       "day": "May 20th",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -16,7 +16,13 @@
       "id": 3,
       "text": "Learn JS",
       "day": "May 20th",
-      "reminder": true
+      "reminder": false
+    },
+    {
+      "id": 4,
+      "text": "Learn NodeJS",
+      "day": "May 20th",
+      "reminder": false
     }
   ]
 }

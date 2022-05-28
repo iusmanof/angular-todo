@@ -5,19 +5,23 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-task-item',
   templateUrl: './task-item.component.html',
-  styleUrls: ['./task-item.component.css']
+  styleUrls: ['./task-item.component.css'],
 })
 export class TaskItemComponent implements OnInit {
   @Input() task!: ITasks;
-  @Output() onDeleteTask: EventEmitter<ITasks> = new EventEmitter()
+  @Output() onDeleteTask: EventEmitter<ITasks> = new EventEmitter();
+  @Output() onToggleReminder: EventEmitter<ITasks> = new EventEmitter();
   faTimes = faTimes;
-  
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 
   onDelete(task: ITasks) {
-    this.onDeleteTask.emit(task)
+    this.onDeleteTask.emit(task);
+  }
+
+  onToggle(task: ITasks) {
+    this.onToggleReminder.emit(task);
   }
 }
